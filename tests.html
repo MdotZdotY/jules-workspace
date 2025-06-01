@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tetris Game Tests</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-suite { margin-bottom: 20px; }
+        .test-suite h2 { margin-bottom: 10px; border-bottom: 1px solid #ccc; padding-bottom: 5px;}
+        .test-case { margin-left: 20px; margin-bottom: 5px; }
+        .pass { color: green; }
+        .fail { color: red; font-weight: bold; }
+        pre { background-color: #f0f0f0; padding: 10px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Tetris Game Logic Tests</h1>
+    <div id="test-results"></div>
+
+    <!-- Game canvas (hidden, but needed for context and some functions) -->
+    <canvas id="tetris" width="240" height="400" style="display: none;"></canvas>
+    <div>Score: <span id="score" style="display: none;">0</span></div>
+    <button id="start" style="display: none;">Start</button>
+    <button id="pause" style="display: none;">Pause</button>
+
+    <script src="tetris.js"></script>
+    <script src="tests.js"></script>
+</body>
+</html>
